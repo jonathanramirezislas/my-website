@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Navbar() {
-  const [show, setshow] = useState(true);
+  const [show, setshow] = useState(false);
   const [title, settile] = useState("HOME");
   const [number, setNumber] = useState("HOME");
 
@@ -13,30 +13,34 @@ export default function Navbar() {
       case 1:
           settile('HOME')
           setNumber(1)
+          setshow(false)
         break;
       case 2:
         settile('PORTAFOLIO')
         setNumber(2)
+          setshow(false)
         break;
       case 3:
         settile('ABOUT')
         setNumber(3)
+          setshow(false)
         break;
       case 4:
         settile('HOME')
         setNumber(4)
+          setshow(false)
         break;
       default:
         break;
     }
   };
-
   return (
+    
     <>
-      <h1 className="absolute mt-2 ml-20 text-center md:hidden text-indigo-50">
+      <h1 className="fixed z-50 mt-2 ml-20 text-center md:hidden text-indigo-50">
         {title}
       </h1>
-      <nav className="flex-row p-2 bg-gray-900 border-b-2 border-red-500 text-indigo-50 color-white md:justify-between">
+      <nav className="fixed z-40 flex-row w-full p-2 bg-gray-900 border-b-2 border-red-500 text-indigo-50 color-white md:justify-between">
         <div className="flex flex-row justify-between">
           <button onClick={() => setshow(!show)} className=" md:hidden">
             <svg
