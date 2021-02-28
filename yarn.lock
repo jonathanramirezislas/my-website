@@ -8523,7 +8523,7 @@
     "iconv-lite" "0.4.24"
     "unpipe" "1.0.0"
 
-"react-dom@^17.0.1", "react-dom@>= 16.8.0", "react-dom@>=16.13", "react-dom@>=16.8", "react-dom@>=17.0":
+"react-dom@^17.0.1", "react-dom@>= 16.8.0", "react-dom@>=16.13", "react-dom@>=16.8", "react-dom@>=17.0", "react-dom@16.x.x || 17.x.x":
   "integrity" "sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.1.tgz"
   "version" "17.0.1"
@@ -8556,6 +8556,11 @@
   "integrity" "sha512-alTKsjEL0dKH/ru1Iyn7vliS2QRcBp9zZPGoWxUOvRGWPUYgjo+V01is7p04It6KhgrzhJGnIj9GgX8W4bZoCQ=="
   "resolved" "https://registry.npmjs.org/react-merge-refs/-/react-merge-refs-1.1.0.tgz"
   "version" "1.1.0"
+
+"react-parallax@^3.2.1":
+  "integrity" "sha512-tT10KgmE2akycI3KtUR9C+wTPI57xwQT4D4Z/5kI/JT+VG4+mgv4hvRJN9zFRMs6xB/4mUPF1Kt9Gu2pwN35iw=="
+  "resolved" "https://registry.npmjs.org/react-parallax/-/react-parallax-3.2.1.tgz"
+  "version" "3.2.1"
 
 "react-reconciler@0.26.1":
   "integrity" "sha512-6E/CvH9zcDmHjhiNJlP0qJ8+3ufnY2b5RWs774Uy8XKWN0l6qfnlkz0XnDacxqj2rbJdq76w9dlFXjPPOQrmqA=="
@@ -8643,7 +8648,7 @@
   dependencies:
     "debounce" "^1.2.0"
 
-"react@^16.8.0 || ^17.0.0", "react@^17.0.1", "react@>= 16.8.0", "react@>=16.13", "react@>=16.8", "react@>=17.0":
+"react@^16.8.0 || ^17.0.0", "react@^17.0.1", "react@>= 16.8.0", "react@>=16.13", "react@>=16.8", "react@>=17.0", "react@16.x.x || 17.x.x":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.1.tgz"
   "version" "17.0.1"

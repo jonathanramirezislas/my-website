@@ -1,7 +1,4 @@
-# react-three-fiber-mylogo
-    
-
-![react-three-fiber](https://res.cloudinary.com/djuqxjkh3/image/upload/v1614203944/mylogo3d/20210224_153934_mnswad.gif)
+# my-website
 
 infinite scrolling code to implement in other proyects  
 
@@ -14,11 +11,11 @@ infinite scrolling code to implement in other proyects
 ## 🛠 Installation
 1. Clone this project.
 ```bash
-  gh repo clone jonathanramirezislas/react-three-fiber
+  gh repo clone jonathanramirezislas/my-website
 ```
 2. Change of directory to the root of the project.
 ```bash
-  cd react-three-fiber
+  cd my-website
 ```
 3. Install the dependencies.
 ```bash
@@ -56,4 +53,4 @@ The MIT License (MIT)
 
 ## Contributing
 
-You're free to contribute to this project by submitting [issues](https://github.com/jonathanramirezislas/react-three-fiber/issues) and/or [pull requests](https://github.com/jonathanramirezislas/react-three-fiber/pulls).
+You're free to contribute to this project by submitting [issues](https://github.com/jonathanramirezislas/my-website/issues) and/or [pull requests](https://github.com/jonathanramirezislas/my-website/pulls).
