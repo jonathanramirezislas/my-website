@@ -18,7 +18,7 @@ const Logo = () => {
     );
   });
   console.log("dfdf", model);
-  return model ? <primitive object={model.scene} /> : null;
+  return model ? <primitive  object={model.scene} /> : null;
 };
 
 const Controls = () => {

@@ -22,7 +22,7 @@ const image1 =
     return (
         
      <>
-         <Parallax bgImage={ image1 } className="z-10 h-full bg-gradient-to-r from-yellow-400 via-red-500 to-pink-400" strength={250}>
+         <Parallax bgImage={ image1 } className="z-10 h-2/4 sm:h-2/4 md:h-full bg-gradient-to-r from-yellow-400 via-red-500 to-pink-400" strength={250}>
          <div className="h-40 md:96">
               <div style={inlineStyle} >
               <Typed />

@@ -40,7 +40,7 @@ export default function Navbar() {
       <h1 className="fixed z-50 mt-2 ml-20 text-center md:hidden text-indigo-50">
         {title}
       </h1>
-      <nav className="fixed z-40 flex-row w-full p-2 bg-gray-900 border-b-2 border-red-500 text-indigo-50 color-white md:justify-between">
+      <nav className="fixed z-40 flex-row w-full h-12 p-2 text-indigo-100 bg-gray-900 border-b-2 border-red-500 color-white md:justify-between">
         <div className="flex flex-row justify-between">
           <button onClick={() => setshow(!show)} className=" md:hidden">
             <svg

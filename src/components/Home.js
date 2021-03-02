@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './ui/Nabvar'
 import { Banner } from './ui/Banner';
 import Stack from './Stack';
+import { About } from './ui/About';
 
 export const Home = () => {
     return (
@@ -10,6 +11,8 @@ export const Home = () => {
             <Banner/>
 
             <Stack/>
+            <About/>
+            <div className="h-36">TODO...</div>
         </div>
     )
 }

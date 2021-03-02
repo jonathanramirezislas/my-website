@@ -12,6 +12,7 @@ export default function Stack() {
     <Parallax 
     bgImage={ image2 }
     strength={200}
+    className="z-10 h-2/4 sm:h-2/4 md:h-full"
     renderLayer={precentage => (
       <div 
         style={{
@@ -30,9 +31,9 @@ export default function Stack() {
   >
     <div style={{ height: 500 }}>
     <div
-      className="flex flex-col items-center justify-center min-h-screen"
+      className="flex flex-col items-center justify-center "
     >
-      <h1 className="mb-10 text-5xl font-bold font-dosis">Stack I Use</h1>
+      <h1 className="pt-2 mb-10 text-5xl font-bold text-indigo-200 font-dosis">Stack I Use</h1>
       <div>
         <div className="flex flex-wrap justify-center">
           {content.stack.tech.map((tech, index) => (
@@ -47,9 +48,6 @@ export default function Stack() {
           ))}
         </div>
       </div>
-      <p className="inline-block w-11/12 mt-10 mb-10 text-xl text-center text-white md:max-w-xl md:text-2xl font-dosis ">
-        {content.stack.desc}.
-      </p>
     </div>
     </div>
   </Parallax>
