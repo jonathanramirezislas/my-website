@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Parallax } from 'react-parallax';
 
-import content from '../assets/stack';
+import content from '../../assets/stack';
 const image2 =
 "http://jonathanramirezislas.com.mx/assets/codig.gif";
 export default function Stack() {

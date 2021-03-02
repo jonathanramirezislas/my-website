@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from './ui/Nabvar'
 import { Banner } from './ui/Banner';
-import Stack from './Stack';
+import Stack from './ui/Stack';
 import { About } from './ui/About';
+import { Projects } from './ui/Projects';
+import { motion } from "framer-motion"
 
 export const Home = () => {
     return (
@@ -12,7 +14,9 @@ export const Home = () => {
 
             <Stack/>
             <About/>
+            <Projects/>
             <div className="h-36">TODO...</div>
+          
         </div>
     )
 }
