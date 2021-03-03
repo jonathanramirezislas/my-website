@@ -4,14 +4,14 @@ import { Banner } from './ui/Banner';
 import Stack from './ui/Stack';
 import { About } from './ui/About';
 import { Projects } from './ui/Projects';
-import { motion } from "framer-motion"
-import { useWindowSize } from './../customehooks/UseWindosSize';
+import Media from './ui/Media';
 
 export const Home = () => {
    
     return (
         <div className="w-full h-screen bg-black">
             <Navbar/>
+           
             <Banner/>
 
             <Stack/>

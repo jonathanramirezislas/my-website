@@ -31,7 +31,7 @@ export default function Stack() {
   >
     <div style={{ height: 500 }}>
     <div
-      className="flex flex-col items-center justify-center "
+      className="flex flex-col items-center justify-center md:mt-20 "
     >
       <h1 className="pt-2 mb-10 text-5xl font-bold text-indigo-200 font-dosis">Stack I Use</h1>
       <div>

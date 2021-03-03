@@ -5,7 +5,8 @@ import { Project } from './Project';
 
 export const Projects = () => {
       return (
-        <motion.div className="w-11/12 p-2">
+        <motion.div className="content-center w-full p-2 bg-black border-t-8 border-red-500 border-double md:pl-12">
+          <h1>Projects</h1>
           <Project/>
           <Project/>
           <Project/>

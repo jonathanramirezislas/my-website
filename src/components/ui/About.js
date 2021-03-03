@@ -8,7 +8,7 @@ export const About = () => {
 		<>
 			<Parallax
 				bgImage={image1}
-				className="z-10 py-3 px-7 h-2/4 sm:h-2/4 md:h-full bg-gradient-to-r from-green-400 to-blue-500"
+				className="z-10 py-3 px-7 h-2/4 sm:h-2/4 md:h-full bg-gradient-to-r from-gray-800 to-blue-400"
 				strength={250}
 			>
 				<div className="flex-1 md:max-w-2xl md:mx-auto md:my-10">

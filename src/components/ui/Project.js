@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useWindowSize } from '../../customehooks/UseWindosSize';
+import { useWindowSize } from '../../customhooks/UseWindosSize';
 
 export const Project = () => {
 	const {width, height} = useWindowSize();
@@ -30,7 +30,7 @@ export const Project = () => {
 	return (
 		<motion.div
 			ref={ref}
-			className="w-10/12 h-40 mt-24 bg-red-600 rounded"
+			className="w-10/12 h-40 mt-24 bg-white rounded md:w-3/4 "
 			animate={controls}
 			initial="hidden"
 			variants={BoxVariants}

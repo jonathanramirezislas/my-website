@@ -1,10 +1,10 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import Typed from './typing';
+
 const image1 =
   "http://jonathanramirezislas.com.mx/assets/bannerjona.svg";
-  const image2 =
-  "http://jonathanramirezislas.com.mx/assets/codig.gif";
+
   const inlineStyle = {
     color: '#FFFFFF',
     fontFamily: "Gill Sans Extrabold",
