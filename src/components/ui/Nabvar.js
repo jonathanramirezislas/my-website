@@ -32,9 +32,9 @@ export default function Navbar() {
 	};
 	return (
 		<>
-			<div className="fixed z-40 grid w-full h-12 grid-cols-2 bg-black border-b-2 border-red-500">
+			<div className="fixed z-40 grid w-full grid-cols-2 bg-black border-b-2 border-red-500 h-11 md:text-2xl md:h-14 ">
 				<div>
-					<nav className="flex-row w-full h-12 p-2 text-indigo-100 color-white md:justify-between">
+					<nav className="flex-row w-full h-full p-2 text-indigo-100 color-white md:justify-between">
 						<div className="flex flex-row justify-between">
 							<button onClick={() => setshow(!show)} className=" md:hidden">
 								<svg
@@ -99,7 +99,7 @@ export default function Navbar() {
 					</nav>
 				</div>
 
-				<div className="flex flex-row justify-center pt-1 mb-1 text-center justify-items-center md:justify-center">
+				<div className="flex flex-row justify-center pt-1 mb-1 text-center justify-items-center md:justify-center ">
 					<Media />
 				</div>
 			</div>

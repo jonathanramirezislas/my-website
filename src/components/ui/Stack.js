@@ -11,8 +11,8 @@ export default function Stack() {
 <>
     <Parallax 
     bgImage={ image2 }
-    strength={200}
-    className="z-10 h-2/4 sm:h-2/4 md:h-full"
+    strength={250}
+    className="z-10 h-2/5 sm:h-2/4 md:h-full"
     renderLayer={precentage => (
       <div 
         style={{

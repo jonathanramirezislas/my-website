@@ -4,21 +4,19 @@ import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useWindowSize } from '../../customhooks/UseWindosSize';
 
-export const Project = () => {
+export const Project = ( props) => {
 	const {width, height} = useWindowSize();
-	const x= width>1000 ? 350 : width>800 ? 200 : 60;
+	const y= width>1000 ? 100 : width>800 ? 50 : 10;
 	
 	const controls = useAnimation();
 	const [ref, inView] = useInView();
 
-	console.log('x:',x ,'width',width);
+	//console.log('x:',x ,'width',width);
 
 	const BoxVariants = {
-		visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-		hidden: { opacity: 0, x: x },
+		visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+		hidden: { opacity: 0, y: y },
 	};
-
-
 
 	useEffect(() => {
 		if (inView ) {
@@ -30,9 +28,9 @@ export const Project = () => {
 	return (
 		<motion.div
 			ref={ref}
-			className="w-10/12 h-40 mt-24 bg-white rounded md:w-3/4 "
 			animate={controls}
 			initial="hidden"
+			className={props.class+''}
 			variants={BoxVariants}
 		>
 			<div>
@@ -44,5 +42,4 @@ export const Project = () => {
 			<div></div>
 		)
 	}
-	
 };
