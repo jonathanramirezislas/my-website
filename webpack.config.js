@@ -37,18 +37,6 @@ module.exports={
             },
 
             {
-                test:/\.(png|jpg|jpeg|svg|gif)$/i,
-                use:{
-                    loader:'file-loader',
-                    options:{
-                        name:'[name].[ext]',
-                        outputPath:'images/',
-                        useRelativePath:true
-                    }
-                }
-            },
-
-            {
                 test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
                   'file-loader',

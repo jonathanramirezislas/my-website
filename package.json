@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@react-spring/three": "^9.0.0-rc.3",
     "@react-three/drei": "^3.8.6",
     "@testing-library/react": "^11.2.3",
     "axios": "^0.21.1",
@@ -60,7 +61,9 @@
     "drei": "^2.2.21",
     "framer-motion": "^3.9.0",
     "html-webpack-plugin": "^4.5.0",
+    "i": "^0.3.6",
     "ityped": "^1.0.3",
+    "npm": "^7.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-intersection-observer": "^8.31.0",

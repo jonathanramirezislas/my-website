@@ -6,6 +6,7 @@ import { About } from './ui/About';
 import { Projects } from './ui/Projects';
 import Media from './ui/Media';
 import { motion } from 'framer-motion';
+import Card from './ui/Card';
 
 
 const containerVariants = {
@@ -42,8 +43,6 @@ export const Home = () => {
             <div className="h-36">TODO...</div>
           
             </motion.div>
-
-          
         </div>
 
     )
