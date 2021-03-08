@@ -7,6 +7,7 @@ import { Projects } from './ui/Projects';
 import Media from './ui/Media';
 import { motion } from 'framer-motion';
 import Card from './ui/Card';
+import { Workplace } from './ui/Workplace';
 
 
 const containerVariants = {
@@ -29,6 +30,7 @@ export const Home = () => {
       
         <div className="w-full h-screen bg-black">
             <Navbar/>
+            
             <motion.div className="container home"
         variants={containerVariants}
         initial="hidden"
@@ -40,6 +42,7 @@ export const Home = () => {
             <Stack/>
             <About/>
             <Projects/>
+            <Workplace/>
             <div className="h-36">TODO...</div>
           
             </motion.div>

@@ -1,30 +1,23 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import Typed from './typing';
+import Typed from './Typed';
 
 const image1 =
-  "http://jonathanramirezislas.com.mx/assets/bannerjona.svg";
+  "https://res.cloudinary.com/djuqxjkh3/image/upload/v1615149449/my-website/Dise%C3%B1o_sin_t%C3%ADtulo_3_spm83j.svg";
 
-  const inlineStyle = {
-    color: '#FFFFFF',
-    fontFamily: "Gill Sans Extrabold",
-    fontSize :40,
-    left: '50%',
-    top: '60%',
-    position: 'absolute',
-    transform: 'translate(-50%, -50%)',
-  }
   export const Banner = () => {
  
     return (     
      <>
-         <Parallax bgImage={ image1 } className="z-10 h-2/5 sm:h-2/4 md:h-full bg-gradient-to-r from-yellow-400 via-red-500 to-pink-400" strength={250}>
-         <div className="h-40 md:96">
-              <div style={inlineStyle} >
+     <div className="relative bg-black h-2/5 sm:w-full sm:h-full ">
+    
+              <Parallax bgImage={ image1 } className="absolute w-full h-full text-white " strength={250}>
+          </Parallax>
+          
+              <div  className="absolute w-1/4 ml-8 text-white h-1/4 top-1/3" >
               <Typed />
               </div>
-            </div>
-          </Parallax>
+     </div>
      </>
     )
 }

@@ -36,6 +36,8 @@ export const Project = (props) => {
 				className={props.class + ''}
 				variants={BoxVariants}
 			>
+
+				sss
 			</motion.div>
 		);
 	} else {

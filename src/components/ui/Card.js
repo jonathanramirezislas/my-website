@@ -3,8 +3,8 @@ import React, { Suspense, useState } from 'react'
 import { Canvas, useLoader } from 'react-three-fiber'
 import { useAspect, MeshWobbleMaterial, Text } from '@react-three/drei'
 import { a, useSpring } from '@react-spring/three'
-import img from './101.jpg'
-
+//import img from './101.jpg'
+const img='https://res.cloudinary.com/djuqxjkh3/image/upload/v1615147781/my-website/Dise%C3%B1o_sin_t%C3%ADtulo_1_lv2fdg.png'
 const AnimatedWobbleMaterial = a(MeshWobbleMaterial)
 
 function useActive(width, height, initial, minFactor, maxFactor) {
@@ -24,7 +24,7 @@ function Donut({ texture, width, height, ...props }) {
   return (
     <a.mesh scale-x={x} scale-y={y} onClick={onClick} {...props}>
       <torusBufferGeometry args={[1, 0.25, 16, 100]} />
-      <AnimatedWobbleMaterial color="blue" map={texture} factor={factor} speed={8} />
+      <AnimatedWobbleMaterial color="#DB2777" map={texture} factor={factor} speed={8} />
     </a.mesh>
   )
 }
@@ -47,6 +47,7 @@ function Font() {
       fontSize={1.5}
       letterSpacing={-0.075}
       lineHeight={0.8}
+      color="white"
       position={[0, 0, 5]}>
       {'Touch me!!'}
       <MeshWobbleMaterial attach="material" color="black" factor={1} />
@@ -68,7 +69,7 @@ function Shapes() {
 
 export default function Card() {
   return (
-    <Canvas pixelRatio={window.devicePixelRatio} camera={{ position: [0, 0, 12] }}>
+    <Canvas pixelRatio={window.devicePixelRatio} camera={{ position: [0, 0, 12] }} className="bg-black">
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Suspense fallback={null}>

@@ -8,7 +8,7 @@ export const About = () => {
 		<>
 			<Parallax
 				bgImage={image1}
-				className="z-10 py-3 px-7 sm:py-1 md:py-6 md:px-14 h-2/5 sm:h-2/4 md:h-full md:pt-2 bg-gradient-to-r from-gray-800 to-blue-400"
+				className="z-10 py-3 px-7 sm:py-1 md:py-6 md:px-14 h-2/5 sm:h-2/4 md:h-full md:pt-2 bg-gradient-to-r from-pink-600 to-purple-600"
 				strength={150}
 			>
 				<div className="flex-1 md:max-w-2xl md:mx-auto md:my-10">
@@ -20,13 +20,16 @@ export const About = () => {
 					</div>
 					<div className="w-full h-40 text-justify bg-gray-700 border-t-0 md:h-96">
 						<p className="p-1 text-xs text-indigo-100 sm:text-sm md:p-4 md:text-lg">
-							I am engineer of IT. I have experience in the development of mobile application, websites.
+							I am engineer of IT. I have experience in the development of mobile application, websites. 
 						</p>
 						<p className="p-1 text-xs text-indigo-100 sm:text-sm md:p-4 md:text-lg">
 							I would like to work at system area to develop my professional skills in wich I could grow
-							professionally
+							professionally 
 						</p>
-						<p className="p-1 text-xs text-indigo-100 sm:text-sm md:p-4 md:text-lg">
+						<p className="text-xs text-indigo-100 sm:text-sm md:p-4 md:text-lg">
+							My favorites tools to develop are ReactJS, React Native and Java
+						</p>
+						<p className="p-0 text-xs text-indigo-100 sm:text-sm md:p-4 md:text-lg">
 							My dream is to become a Lead Full-Stack Developer
 						</p>
 					</div>
