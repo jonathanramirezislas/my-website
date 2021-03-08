@@ -14,7 +14,7 @@ const image1 =
               <Parallax bgImage={ image1 } className="absolute w-full h-full text-white " strength={250}>
           </Parallax>
           
-              <div  className="absolute w-1/4 ml-8 text-white h-1/4 top-1/3" >
+              <div  className="absolute w-1/4 ml-8 text-white h-1/4 top-1/3 lg:text-5xl" >
               <Typed />
               </div>
      </div>

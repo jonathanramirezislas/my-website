@@ -17,15 +17,22 @@ const data = [
 export const Resume = () => {
 	return (
 		<>
-			<motion.div className="flex flex-wrap w-full px-4 py-4 text-white bg-black border-t-8 border-red-500 border-double auto-rows-3">
-			<div className="flex-row justify-center w-full h-16">
-                <div className="text-center text-4x1">
-                <h2>Resume</h2>
-                </div>
-            </div>
-            	<div className="flex-grow-0 flex-shrink-0 w-2/4 ">
-					<div className="p-5 mx-4 my-4 border-2 border-white">
-						<span className="font-bold text-pink-600">2016-2020</span>
+			<div className="flex flex-wrap w-full px-4 py-4 text-white bg-black border-t-8 border-red-500 border-double auto-rows-3">
+				<div className="relative flex items-start justify-start w-full h-16 md:justify-center ">
+					<div className="ml-4 md:ml-0">
+						<span className="absolute z-20 mt-2 text-3xl font-bold text-white">RESUME</span>
+						<div className="bg-white bg-opacity-50">
+							<h2 className="absolute z-10 block -ml-4 text-6xl font-bold tracking-wide bg-opacity-50 bg-no-repeat bg-cover text-align letter-img-bg text-fill-transparent bg-clip-text">
+								RESUME
+							</h2>
+						</div>
+					</div>
+				</div>
+
+				<div className="flex-grow-0 flex-shrink-0 w-full md:w-2/4 ">
+
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+						<span className="font-bold text-pink-600 text-md ">2016-2020</span>
 						<h2>Engineering in Tecnologías de la información y comunicaciones</h2>
 						<span className="position"></span>
 						<p className="mt-4">
@@ -35,8 +42,8 @@ export const Resume = () => {
 						</p>
 					</div>
 
-					<div className="p-5 mx-4 my-4 border-2 border-white">
-						<span className="font-bold text-pink-600">2018</span>
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+						<span className="font-bold text-pink-600 text-md">2018</span>
 						<h2>Jr Web developer</h2>
 						<span className="position">J Charles & Charles </span>
 						<p className="mt-4">
@@ -51,8 +58,8 @@ export const Resume = () => {
 							<b> HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, PHP and MySQL</b>
 						</p>
 					</div>
-					<div className="p-5 mx-4 my-4 border-2 border-white">
-						<span className="font-bold text-pink-600">2017</span>
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+						<span className="font-bold text-pink-600 text-md">2017</span>
 						<h2>Storer</h2>
 						<span className="position">Grupo ISN</span>
 						<p className="mt-4">
@@ -62,9 +69,9 @@ export const Resume = () => {
 						<p>Responsible for inventory accuracy</p>
 					</div>
 				</div>
-				<div  className="flex-grow-0 flex-shrink-0 w-2/4 "> 
-					<div className="p-5 mx-4 my-4 border-2 border-white">
-						<span className="font-bold text-pink-600">2020</span>
+				<div className="flex-grow-0 flex-shrink-0 w-full md:w-2/4 ">
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+						<span className="font-bold text-pink-600 text-md">2020</span>
 						<h2>Jr Data Scientist</h2>
 						<span className="position">Nissan A1</span>
 						<p className="mt-4">
@@ -84,8 +91,8 @@ export const Resume = () => {
 							Extract, Transform and Load Process <b>(ETL)</b>
 						</p>
 					</div>
-					<div className="p-5 mx-4 my-4 border-2 border-white">
-						<span className="font-bold text-pink-600">2020</span>
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+						<span className="font-bold text-pink-600 text-md">2020</span>
 						<h2>Java Software Engineer</h2>
 						<span className="position">Nissan A1</span>
 						<p className="mt-4">Working for V-Preng T&C department.</p>
@@ -95,7 +102,7 @@ export const Resume = () => {
 						</p>
 					</div>
 				</div>
-			</motion.div>
+			</div>
 		</>
 	);
 };

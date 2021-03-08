@@ -41,10 +41,11 @@ export const Home = () => {
             <Banner/>
             <Stack/>
             <About/>
+            <Resume/>
             <Projects/>
-            <Workplace/>
             <div className="h-36">TODO...</div>
-          <Resume/>
+          
+           
             </motion.div>
         </div>
 
