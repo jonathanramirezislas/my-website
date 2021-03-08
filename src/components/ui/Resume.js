@@ -31,7 +31,7 @@ export const Resume = () => {
 
 				<div className="flex-grow-0 flex-shrink-0 w-full md:w-2/4 ">
 
-					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md ">2016-2020</span>
 						<h2>Engineering in Tecnologías de la información y comunicaciones</h2>
 						<span className="position"></span>
@@ -42,7 +42,7 @@ export const Resume = () => {
 						</p>
 					</div>
 
-					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md">2018</span>
 						<h2>Jr Web developer</h2>
 						<span className="position">J Charles & Charles </span>
@@ -58,7 +58,7 @@ export const Resume = () => {
 							<b> HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, PHP and MySQL</b>
 						</p>
 					</div>
-					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md">2017</span>
 						<h2>Storer</h2>
 						<span className="position">Grupo ISN</span>
@@ -70,7 +70,7 @@ export const Resume = () => {
 					</div>
 				</div>
 				<div className="flex-grow-0 flex-shrink-0 w-full md:w-2/4 ">
-					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md">2020</span>
 						<h2>Jr Data Scientist</h2>
 						<span className="position">Nissan A1</span>
@@ -91,7 +91,7 @@ export const Resume = () => {
 							Extract, Transform and Load Process <b>(ETL)</b>
 						</p>
 					</div>
-					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg">
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md">2020</span>
 						<h2>Java Software Engineer</h2>
 						<span className="position">Nissan A1</span>
