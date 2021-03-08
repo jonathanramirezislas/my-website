@@ -6,7 +6,7 @@ import { About } from './ui/About';
 import { Projects } from './ui/Projects';
 import Media from './ui/Media';
 import { motion } from 'framer-motion';
-import Card from './ui/Card';
+import {Resume} from './ui/Resume';
 import { Workplace } from './ui/Workplace';
 
 
@@ -44,7 +44,7 @@ export const Home = () => {
             <Projects/>
             <Workplace/>
             <div className="h-36">TODO...</div>
-          
+          <Resume/>
             </motion.div>
         </div>
 
