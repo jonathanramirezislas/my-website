@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import { motion } from 'framer-motion';
 import Card from './Card';
+
+
 const thecnologies='https://res.cloudinary.com/djuqxjkh3/image/upload/v1615256866/my-website/thecnologies/'
+
+
 export const Thecnologies = () => {
+
+     
 	return (
 		<>
 			<motion.div className="grid w-full grid-cols-3 grid-rows-4 gap-6 px-4 py-4 bg-black border-t-8 border-red-500 border-double">
@@ -17,7 +23,7 @@ export const Thecnologies = () => {
 					<Card img={`${thecnologies}`+'maven.png'} col={'pink'} textcolor={'black'} text={'MAVEN'} />
 				</div>
                 <div className="flex flex-col ">
-					<Card img={`${thecnologies}`+'express.png'} col={'white'} textcolor={'white'} text={'Express'} />
+					<Card img={`${thecnologies}`+'express.png'} col={'white'} textcolor={'black'} text={'Express'} />
 				</div>
                 <div className="flex flex-col ">
 					<Card img={`${thecnologies}`+'sass.png'} col={'pink'} textcolor={'white'} text={'SASS'} />
@@ -32,12 +38,17 @@ export const Thecnologies = () => {
 					<Card img={`${thecnologies}`+'redux.png'} col={'purple'} textcolor={'white'} text={'REDUX'} />
 				</div>
 				<div className="flex flex-col ">
-					<Card img={`${thecnologies}`+'mongo.png'} col={'green'} textcolor={'white'} text={'MONGO'} />
+					<Card img={`${thecnologies}`+'mongo.png'} col={'green'} textcolor={'black'} text={'MONGO'} />
 				</div>
                 <div className="flex flex-col ">
 					<Card img={`${thecnologies}`+'sqlserver.png'} col={'red'} textcolor={'black'} text={'SQLserver'} />
 				</div>
-
+                <div className="flex flex-col ">
+					<Card img={`${thecnologies}`+'docker.png'} col={'#00FFFD'} textcolor={'black'} text={'DOCKER'} />
+				</div>
+                <div className="flex flex-col ">
+					<Card img={`${thecnologies}`+'aws.png'} col={'#F8FF00'} textcolor={'black'} text={'AWS'} />
+				</div>
 
 			</motion.div>
 		</>

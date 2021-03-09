@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React ,{useState} from 'react'
 import Navbar from './ui/Nabvar'
 import { Banner } from './ui/Banner';
 import Stack from './ui/Stack';
@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import {Resume} from './ui/Resume';
 import { Workplace } from './ui/Workplace';
 import { Thecnologies } from './ui/Thecnologies';
-
+import { TorusGeometry } from 'three';
 
 const containerVariants = {
     hidden: { 
@@ -26,7 +26,8 @@ const containerVariants = {
   };
 
 export const Home = () => {
-   
+  const [stack, setStack] = useState(false)
+  const [technologies, setTechnologies] = useState(false)
     return (
       
         <div className="w-full h-screen bg-black">
@@ -39,14 +40,16 @@ export const Home = () => {
         exit="exit"
         className="w-full h-screen bg-black"
       >
-            <Banner/>
-            <Stack/>
+            <Banner stack={stack} setStack={setStack} />
+            {stack && <Stack setTechnologies={setTechnologies}/>}
+            {technologies && <Thecnologies/>}
+{/*              
             <Thecnologies/>
             <About/>
             <Resume/>
             <Projects/>
             <div className="h-36">TODO...</div>
-          
+           */}
            
             </motion.div>
         </div>

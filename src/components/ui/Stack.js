@@ -1,12 +1,26 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Parallax } from 'react-parallax';
+import { useInView } from 'react-intersection-observer';
 
 import content from '../../assets/stack';
 const image2 =
 "http://jonathanramirezislas.com.mx/assets/codig.gif";
-export default function Stack() {
+
+
+export default function Stack({setTechnologies}) {
+
+  const [ref, inView] = useInView();
+ 
+    
+  
+    useEffect(() => {
+      if (inView ) {
+        setTechnologies(true)
+      }
+    }, [inView]);
+
   return (
 <>
     <Parallax 
@@ -15,6 +29,7 @@ export default function Stack() {
     className="z-10 h-2/5 sm:h-2/4 md:h-full"
     renderLayer={precentage => (
       <div 
+      
         style={{
           position: 'absolute',
           width: '100px',
@@ -49,6 +64,7 @@ export default function Stack() {
         </div>
       </div>
     </div>
+    <div ref={ref}></div>
     </div>
   </Parallax>
 </>
