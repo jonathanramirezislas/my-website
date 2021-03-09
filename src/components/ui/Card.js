@@ -19,17 +19,17 @@ function useActive(width, height, initial, minFactor, maxFactor) {
   return [(e) => (e.stopPropagation(), set(!active)), x, y, factor]
 }
 
-function Donut({ texture, width, height, ...props }) {
+function Donut({ texture, width, height, col, ...props }) {
   const [onClick, x, y, factor] = useActive(width, height, false, 6, 3.5)
   return (
     <a.mesh scale-x={x} scale-y={y} onClick={onClick} {...props}>
       <torusBufferGeometry args={[1, 0.25, 16, 100]} />
-      <AnimatedWobbleMaterial color="#DB2777" map={texture} factor={factor} speed={8} />
+      <AnimatedWobbleMaterial color={col} map={texture} factor={factor} speed={8} />
     </a.mesh>
   )
 }
 
-function Image({ texture, width, height }) {
+function Image({ texture, width, height , img }) {
   const [onClick, x, y, factor] = useActive(width, height, true, 3.2, 1.2)
   return (
     <a.mesh scale-x={x} scale-y={y} onClick={onClick}>
@@ -39,7 +39,7 @@ function Image({ texture, width, height }) {
   )
 }
 
-function Font() {
+function Font({text, textcolor}) {
   return (
     <Text
       glyphGeometryDetail={32}
@@ -47,33 +47,33 @@ function Font() {
       fontSize={1.5}
       letterSpacing={-0.075}
       lineHeight={0.8}
-      color="white"
+      color={textcolor}
       position={[0, 0, 5]}>
-      {'Touch me!!'}
+      {text}
       <MeshWobbleMaterial attach="material" color="black" factor={1} />
     </Text>
   )
 }
 
-function Shapes() {
+function Shapes({img, text, col , textcolor}) {
   const texture = useLoader(TextureLoader, img)
   const [width, height] = useAspect('cover', 2000, 2000)
   return (
     <>
-      <Donut texture={texture} width={width} height={height} position-z={2}  />
-      <Image texture={texture} width={width} height={height} />
-      <Font />
+      <Donut texture={texture} width={width} height={height} position-z={2} col={col}  />
+      <Image texture={texture} width={width} height={height} img={img}/>
+      <Font text={text} textcolor={textcolor}/>
     </>
   )
 }
 
-export default function Card() {
+export default function Card({img , text, col, textcolor}) {
   return (
     <Canvas pixelRatio={window.devicePixelRatio} camera={{ position: [0, 0, 12] }} className="bg-black">
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Suspense fallback={null}>
-        <Shapes />
+        <Shapes img={img} text={text} col={col} textcolor={textcolor}/>
       </Suspense>
     </Canvas>
   )

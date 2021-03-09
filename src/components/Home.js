@@ -8,6 +8,7 @@ import Media from './ui/Media';
 import { motion } from 'framer-motion';
 import {Resume} from './ui/Resume';
 import { Workplace } from './ui/Workplace';
+import { Thecnologies } from './ui/Thecnologies';
 
 
 const containerVariants = {
@@ -40,6 +41,7 @@ export const Home = () => {
       >
             <Banner/>
             <Stack/>
+            <Thecnologies/>
             <About/>
             <Resume/>
             <Projects/>
