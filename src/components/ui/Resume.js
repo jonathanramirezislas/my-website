@@ -1,20 +1,19 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Project } from './Project';
-import Card from './Card';
+import React,{useEffect} from 'react';
+import { useInView } from 'react-intersection-observer';
 
-const data = [
-	{
-		img: 'fgfdg',
-	},
-	{},
-	{},
-	{},
-	{},
-	{},
-];
 
-export const Resume = () => {
+export const Resume = ({setProjects}) => {
+
+	const [ref, inView] = useInView();
+ 
+    
+  
+    useEffect(() => {
+      if (inView ) {
+        setProjects(true)
+      }
+    }, [inView]);
+
 	return (
 		<>
 			<div className="flex flex-wrap w-full px-4 py-4 text-white bg-black border-t-8 border-red-500 border-double auto-rows-3">
@@ -103,6 +102,7 @@ export const Resume = () => {
 					</div>
 				</div>
 			</div>
+			<div ref={ref}></div>
 		</>
 	);
 };

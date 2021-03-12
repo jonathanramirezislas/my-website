@@ -1,11 +1,21 @@
 import React,{useState, useEffect} from 'react';
 import { Parallax } from 'react-parallax';
+import { useInView } from 'react-intersection-observer';
 
 const image1 = 'https://res.cloudinary.com/djuqxjkh3/image/upload/v1615162670/my-website/Dise%C3%B1o_sin_t%C3%ADtulo_4_n5xqgi.svg';
 
-export const About = () => {
+export const About = ({setResume}) => {
 
-	
+	const [ref, inView] = useInView();
+ 
+    
+  
+    useEffect(() => {
+      if (inView ) {
+        setResume(true)
+      }
+    }, [inView]);
+
 
 	const [Color, setColor]= useState(1)
 	const [ColorBG, setColorBG]= useState('bg-gradient-to-r from-pink-600 to-purple-600')
@@ -59,6 +69,7 @@ export const About = () => {
 					</div>
 				</div>
 			</Parallax>
+			<div ref={ref}></div>	
 		</>
 	);
 };

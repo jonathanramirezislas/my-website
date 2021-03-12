@@ -3,8 +3,6 @@ import React, { Suspense, useState } from 'react'
 import { Canvas, useLoader } from 'react-three-fiber'
 import { useAspect, MeshWobbleMaterial, Text } from '@react-three/drei'
 import { a, useSpring } from '@react-spring/three'
-//import img from './101.jpg'
-const img='https://res.cloudinary.com/djuqxjkh3/image/upload/v1615147781/my-website/Dise%C3%B1o_sin_t%C3%ADtulo_1_lv2fdg.png'
 const AnimatedWobbleMaterial = a(MeshWobbleMaterial)
 
 function useActive(width, height, initial, minFactor, maxFactor) {
@@ -24,7 +22,7 @@ function Donut({ texture, width, height, col, ...props }) {
   return (
     <a.mesh scale-x={x} scale-y={y} onClick={onClick} {...props}>
       <torusBufferGeometry args={[1, 0.25, 16, 100]} />
-      <AnimatedWobbleMaterial color={col} map={texture} factor={factor} speed={8} />
+      <AnimatedWobbleMaterial color={col} map={texture} factor={factor} speed={6} />
     </a.mesh>
   )
 }
@@ -34,7 +32,7 @@ function Image({ texture, width, height , img }) {
   return (
     <a.mesh scale-x={x} scale-y={y} onClick={onClick}>
       <planeBufferGeometry args={[1, 1, 32, 32]} />
-      <AnimatedWobbleMaterial map={texture} factor={factor} speed={8} />
+      <AnimatedWobbleMaterial map={texture} factor={factor} speed={6} />
     </a.mesh>
   )
 }

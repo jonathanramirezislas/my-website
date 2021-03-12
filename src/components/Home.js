@@ -28,6 +28,10 @@ const containerVariants = {
 export const Home = () => {
   const [stack, setStack] = useState(false)
   const [technologies, setTechnologies] = useState(false)
+  const [about, setAbout] = useState(false)
+  const [resume, setResume] = useState(false)
+  const [projects, setProjects] = useState(false)
+
     return (
       
         <div className="w-full h-screen bg-black">
@@ -42,9 +46,13 @@ export const Home = () => {
       >
             <Banner stack={stack} setStack={setStack} />
             {stack && <Stack setTechnologies={setTechnologies}/>}
-            {technologies && <Thecnologies/>}
+            {technologies && <Thecnologies setAbout={setAbout}/>}
+            {about && <About setResume={setResume}/>}
+            {resume && <Resume setProjects={setProjects}/>}
+            {projects && <Projects />}
+            <div className="h-36">TODO...</div>
+
 {/*              
-            <Thecnologies/>
             <About/>
             <Resume/>
             <Projects/>
