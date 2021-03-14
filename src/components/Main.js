@@ -42,7 +42,7 @@ export const Main = () => {
       <div className="absolute z-10 bottom-6">
         <Link
           to="/home"
-          className="inline-flex px-4 text-lg	md:text-base py-2 ml-3 mb-1 mr-1 font-bold text-gray-500 uppercase bg-transparent border border-gray-500 border-solid rounded-full outline-none hover:bg-gray-500 hover:text-white active:bg-gray-600 focus:outline-none transition: all .15s ease"
+          className="inline-flex px-4 text-lg	md:text-base lg:text-3xl py-2 ml-3 mb-1 mr-1 font-bold text-gray-500 uppercase bg-transparent border border-gray-500 border-solid rounded-full outline-none hover:bg-gray-500 hover:text-white active:bg-gray-600 focus:outline-none transition: all .15s ease"
         >
           <span>START</span>
           <svg

@@ -1,22 +1,13 @@
-import React,{useEffect} from 'react';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 
 
-export const Resume = ({setProjects}) => {
+export const Resume = () => {
 
-	const [ref, inView] = useInView();
- 
-    
-  
-    useEffect(() => {
-      if (inView ) {
-        setProjects(true)
-      }
-    }, [inView]);
-
+	
 	return (
 		<>
-			<div className="flex flex-wrap w-full px-4 py-4 text-white bg-black border-t-8 border-red-500 border-double auto-rows-3">
+			<div className="flex flex-wrap w-full px-4 py-4 text-white bg-black border-t-8 border-pink-600 border-double auto-rows-3">
+			
 				<div className="relative flex items-start justify-start w-full h-16 md:justify-center ">
 					<div className="ml-4 md:ml-0">
 						<span className="absolute z-20 mt-2 text-3xl font-bold text-white">RESUME</span>
@@ -27,8 +18,9 @@ export const Resume = ({setProjects}) => {
 						</div>
 					</div>
 				</div>
-
+				
 				<div className="flex-grow-0 flex-shrink-0 w-full md:w-2/4 ">
+			
 
 					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md ">2016-2020</span>
@@ -40,7 +32,7 @@ export const Resume = ({setProjects}) => {
 							institutions.
 						</p>
 					</div>
-
+				
 					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md">2018</span>
 						<h2>Jr Web developer</h2>
@@ -57,6 +49,7 @@ export const Resume = ({setProjects}) => {
 							<b> HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, PHP and MySQL</b>
 						</p>
 					</div>
+
 					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md">2017</span>
 						<h2>Storer</h2>
@@ -68,7 +61,9 @@ export const Resume = ({setProjects}) => {
 						<p>Responsible for inventory accuracy</p>
 					</div>
 				</div>
+
 				<div className="flex-grow-0 flex-shrink-0 w-full md:w-2/4 ">
+					
 					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md">2020</span>
 						<h2>Jr Data Scientist</h2>
@@ -90,6 +85,7 @@ export const Resume = ({setProjects}) => {
 							Extract, Transform and Load Process <b>(ETL)</b>
 						</p>
 					</div>
+					
 					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md">2020</span>
 						<h2>Java Software Engineer</h2>
@@ -100,9 +96,9 @@ export const Resume = ({setProjects}) => {
 							reducing the time to create from manually to automatically (3 hours to 5 minutes).
 						</p>
 					</div>
+
 				</div>
 			</div>
-			<div ref={ref}></div>
 		</>
 	);
 };

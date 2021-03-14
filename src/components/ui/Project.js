@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useWindowSize } from '../../customhooks/UseWindosSize';
-import { Canvas } from "react-three-fiber";
-import { Sky } from "drei";
-import * as THREE from "three";
+import { Canvas } from 'react-three-fiber';
+import { Sky } from 'drei';
+import * as THREE from 'three';
 import Card from './Card';
 
 export const Project = (props) => {
@@ -14,7 +14,6 @@ export const Project = (props) => {
 
 	const controls = useAnimation();
 	const [ref, inView] = useInView();
-
 
 	const BoxVariants = {
 		visible: { opacity: 1, y: 0, transition: { duration: 1 } },
@@ -36,8 +35,8 @@ export const Project = (props) => {
 				className={props.class + ''}
 				variants={BoxVariants}
 			>
-
-				sss
+				<img src={props.img} alt="new" />
+				<h4>{props.info}</h4>
 			</motion.div>
 		);
 	} else {

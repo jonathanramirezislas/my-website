@@ -66,7 +66,7 @@ export default function Navbar() {
 									'font-bold pr-5  mt-10 md:mt-2 cursor-pointer hover:text-purple-700'
 								}
 							>
-								<a> Home </a>
+								<a href="#home"> Home </a>
 							</li>
 							<li
 								onClick={() => active(2)}
@@ -93,7 +93,7 @@ export default function Navbar() {
 									'font-bold font-sans pr-5  mt-10 md:mt-2 cursor-pointer hover:text-purple-700'
 								}
 							>
-								<a>About</a>
+								<a href="#thec">Thecnologies</a>
 							</li>
 						</ul>
 					</nav>

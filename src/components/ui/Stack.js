@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Parallax } from 'react-parallax';
@@ -9,31 +9,20 @@ const image2 =
 "http://jonathanramirezislas.com.mx/assets/codig.gif";
 
 
-export default function Stack({setTechnologies}) {
+export default function Stack({}) {
 
-  const [ref, inView] = useInView();
- 
-    
   
-    useEffect(() => {
-      if (inView ) {
-        setTechnologies(true)
-      }
-    }, [inView]);
-
   return (
-<>
+<div >
+  
     <Parallax 
     bgImage={ image2 }
     strength={250}
-    className="z-10 h-2/5 sm:h-2/4 md:h-full"
+    className="z-10 h-2/5 md:h-full"
     renderLayer={precentage => (
       <div 
-      
+      className="absolute h-8 w-15 md:w-24 md:h-24 "
         style={{
-          position: 'absolute',
-          width: '100px',
-          height: '100px',
           borderRadius: '50%',
           background: `rgba(102, 51, 153, ${precentage * 1})`,
           left: '50%',
@@ -44,13 +33,13 @@ export default function Stack({setTechnologies}) {
       </div>
     )}
   >
-    <div style={{ height: 500 }}>
+    <div className="h-2/4 md:h-96">
     <div
-      className="flex flex-col items-center justify-center md:mt-20 "
+      className="flex flex-col items-center justify-end md:mt-20 "
     >
       <h1 className="pt-2 mb-10 text-5xl font-bold text-indigo-200 font-dosis">Stack I Use</h1>
       <div>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center ">
           {content.stack.tech.map((tech, index) => (
             <span
               key={index}
@@ -64,9 +53,10 @@ export default function Stack({setTechnologies}) {
         </div>
       </div>
     </div>
-    <div ref={ref}></div>
+    
     </div>
   </Parallax>
-</>
+  
+</div>
   );
 }
