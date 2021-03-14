@@ -29,7 +29,7 @@ export const About = () => {
 			<Parallax
 				bgImage={image1}
 				className={
-					'px-3 sm:px-16 md:px-48 flex flex-col flex-wrap justify-center content-center items-center h-full ' +
+					'px-5 py-5 sm:px-16 md:px-48 flex flex-col flex-wrap justify-center content-center items-center h-full ' +
 					ColorBG
 				}
 				strength={150}
@@ -59,19 +59,19 @@ export const About = () => {
 							></span>
 							<h1 className="text-indigo-400"> ABOUT ME</h1>
 						</div>
-						<div className="h-full px-4 py-4 text-justify text-indigo-100 bg-gray-700 border-t-0 md:h-96">
-							<p className="p-1 text-sm md:p-2 md:text-3xl">
+						<div className="h-full px-4 py-4 text-justify text-indigo-100 bg-gray-700 border-t-0 md:h-96 lg:h-auto">
+							<p className="p-1 text-sm md:p-2 lg:p-3 md:text-3xl lg:text-4xl">
 								👋 Hi! I am engineer of IT. I have experience in the development of mobile application
 								and websites.
 							</p>
-							<p className="p-1 text-sm md:p-2 md:text-3xl">
+							<p className="p-1 text-sm md:p-2 lg:p-3 md:text-3xl lg:text-4xl">
 								I would like to work in your company to develop my professional skills in wich I could
 								grow professionally.👨‍💻
 							</p>
-							<p className="p-1 text-sm md:p-2 md:text-3xl">
+							<p className="p-1 text-sm md:p-2 lg:p-3 md:text-3xl lg:text-4xl">
 								My favorites tools to develop are ReactJS, React Native and Java.⚛️☕
 							</p>
-							<p className="p-1 text-sm md:p-2 md:text-3xl">
+							<p className="p-1 text-sm md:p-2 lg:p-3 md:text-3xl lg:text-4xl">
 								My dream is to become a Lead Full-Stack Developer.🚀
 							</p>
 						</div>

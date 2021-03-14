@@ -32,7 +32,7 @@ export default function Navbar() {
 	};
 	return (
 		<>
-			<div className="fixed z-40 grid w-full grid-cols-2 bg-black border-b-2 border-purple-700 h-11 md:text-sm md:h-14 ">
+			<div className="fixed z-40 grid w-full grid-cols-2 bg-black border-b-2 border-purple-700 h-11 md:text-sm lg:text-lg md:h-14 ">
 				<div>
 					<nav className="flex-row w-full h-full p-2 text-indigo-100 color-white md:justify-between">
 						<div className="flex flex-row justify-between">
@@ -55,7 +55,7 @@ export default function Navbar() {
 						</div>
 						<ul
 							className={
-								'bg-black bg-opacity-50 md:bg-opacity-100 	border-b-3 border-r-2  border-purple-700 md:border-none	md:ml-2 flex-row md:flex w-11/12  text-white ' +
+								'bg-black bg-opacity-50 md:bg-opacity-100 border-b-3 border-r-2  border-purple-700 md:border-none	md:ml-2 flex-row md:flex w-11/12  text-white ' +
 								(show ? 'show  h-80 -ml-2 rounded pl-2 justify-between items-center pt-4' : 'hidden')
 							}
 						>
@@ -63,7 +63,7 @@ export default function Navbar() {
 								onClick={() => active(1)}
 								className={
 									(number == 1 ? 'text-blue-300 underline ' : '') +
-									'font-bold pr-5  mt-10 md:mt-2 cursor-pointer hover:text-purple-700'
+									'font-bold pr-5  mt-10 md:mt-2 cursor-pointer hover:text-yellow-300'
 								}
 							>
 								<a href="#home"> Home </a>
@@ -72,7 +72,7 @@ export default function Navbar() {
 								onClick={() => active(2)}
 								className={
 									(number == 2 ? 'text-blue-300 underline ' : '') +
-									'font-bold pr-5  mt-10 md:mt-2 cursor-pointer hover:text-purple-700'
+									'font-bold pr-5  mt-10 md:mt-2 cursor-pointer hover:text-yellow-300'
 								}
 							>
 								<a>Porfolio</a>
@@ -81,7 +81,7 @@ export default function Navbar() {
 								onClick={() => active(3)}
 								className={
 									(number == 3 ? 'text-blue-300 underline ' : '') +
-									'font-bold pr-5 mt-10 md:mt-2 cursor-pointer hover:text-purple-700'
+									'font-bold pr-5 mt-10 md:mt-2 cursor-pointer hover:text-yellow-300'
 								}
 							>
 								<a>About</a>
@@ -90,7 +90,7 @@ export default function Navbar() {
 								onClick={() => active(4)}
 								className={
 									(number == 4 ? 'text-blue-300 underline ' : '') +
-									'font-bold font-sans pr-5  mt-10 md:mt-2 cursor-pointer hover:text-purple-700'
+									'font-bold font-sans pr-5  mt-10 md:mt-2 cursor-pointer hover:text-yellow-300'
 								}
 							>
 								<a href="#thec">Thecnologies</a>

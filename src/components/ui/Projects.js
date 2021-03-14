@@ -24,24 +24,32 @@ const data = [
 
 export const Projects = () => {
 	return (
-		<>
-			<motion.div className="grid w-full grid-cols-2 grid-rows-3 gap-4 px-4 py-4 bg-black border-t-8 border-red-500 border-double">
-				{data.map((proyect) => {
+		<div>
+				<div className="relative flex items-start justify-start w-full h-16 bg-black md:justify-center ">
+					<div className="ml-4 md:ml-0">
+						<span className="absolute z-20 mt-2 text-3xl font-bold text-white">PROJECTS</span>
+						<div className="bg-white bg-opacity-50">
+							<h2 className="absolute z-10 block -ml-4 text-6xl font-bold tracking-wide bg-opacity-50 bg-no-repeat bg-cover text-align letter-img-bg text-fill-transparent bg-clip-text">
+								PROJECTS
+							</h2>
+						</div>
+					</div>
+				</div>
+			<motion.div className="grid w-full grid-cols-1 grid-rows-3 gap-2 px-4 py-4 bg-black md:grid-cols-2 md:grid-rows-2 md:gap-4 ">
+				{data.map((proyect,index) => {
 					return (
 						<>
 								<Project
+									key={index}
 									class="flex flex-col w-full h-auto bg-white rounded border-4 border-purple-700 "
-									img={proyect.img}
+									img={proyect.main_img}
 									info={proyect.info}
 								/>
-								<Project
-									class="w-full bg-white rounded h-auto border-2 border-purple-700"
-									img={proyect.main_img}
-								/>
+								
 						</>
 					);
 				})}
 			</motion.div>
-		</>
+		</div>
 	);
 };

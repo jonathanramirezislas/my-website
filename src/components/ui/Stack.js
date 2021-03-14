@@ -37,7 +37,7 @@ export default function Stack({}) {
     <div
       className="flex flex-col items-center justify-end md:mt-20 "
     >
-      <h1 className="pt-2 mb-10 text-5xl font-bold text-indigo-200 font-dosis">Stack I Use</h1>
+      <h1 className="pt-2 mb-10 text-5xl font-bold text-pink-700 font-dosis">Stack I Use</h1>
       <div>
         <div className="flex flex-wrap justify-center ">
           {content.stack.tech.map((tech, index) => (
