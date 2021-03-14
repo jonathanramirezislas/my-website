@@ -10,12 +10,12 @@ const image1 =
  
     return (     
   
-     <div  className="relative w-full h-full bg-black">
+     <div id="home" className="relative w-full h-full bg-black">
     
-              <Parallax bgImage={ image1 } className="absolute w-full h-full text-white " strength={250}>
+              <Parallax  bgImage={ image1 } className="absolute w-full h-full text-white " strength={250}>
           </Parallax>
           
-              <div  className="absolute w-1/4 ml-8 text-white top-3/4 h-1/4 md:top-1/3 lg:text-5xl" >
+              <div   className="absolute w-1/4 ml-8 text-white top-3/4 h-1/4 md:top-1/3 lg:text-5xl" >
               <Typed />
               </div>
      </div>

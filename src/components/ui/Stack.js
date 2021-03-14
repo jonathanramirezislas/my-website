@@ -13,7 +13,7 @@ export default function Stack({}) {
 
   
   return (
-<div >
+<div id="thec">
   
     <Parallax 
     bgImage={ image2 }

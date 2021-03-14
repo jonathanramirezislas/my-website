@@ -3,33 +3,10 @@ import Media from './Media';
 
 export default function Navbar() {
 	const [show, setshow] = useState(false);
-	const [number, setNumber] = useState('HOME');
 
-	console.log('show', show);
 	useEffect(() => {}, [show]);
 
-	const active = (num) => {
-		switch (num) {
-			case 1:
-				setNumber(1);
-				setshow(false);
-				break;
-			case 2:
-				setNumber(2);
-				setshow(false);
-				break;
-			case 3:
-				setNumber(3);
-				setshow(false);
-				break;
-			case 4:
-				setNumber(4);
-				setshow(false);
-				break;
-			default:
-				break;
-		}
-	};
+	
 	return (
 		<>
 			<div className="fixed z-40 grid w-full grid-cols-2 bg-black border-b-2 border-purple-700 h-11 md:text-sm lg:text-lg md:h-14 ">
@@ -60,40 +37,30 @@ export default function Navbar() {
 							}
 						>
 							<li
-								onClick={() => active(1)}
-								className={
-									(number == 1 ? 'text-blue-300 underline ' : '') +
-									'font-bold pr-5  mt-10 md:mt-2 cursor-pointer hover:text-yellow-300'
-								}
+								onClick={() => setshow(false)}
+								className='pr-5 mt-10 font-bold cursor-pointer md:mt-2 hover:text-yellow-300'
+								
 							>
 								<a href="#home"> Home </a>
 							</li>
 							<li
-								onClick={() => active(2)}
-								className={
-									(number == 2 ? 'text-blue-300 underline ' : '') +
-									'font-bold pr-5  mt-10 md:mt-2 cursor-pointer hover:text-yellow-300'
-								}
+								onClick={() => setshow(false)}
+								className='pr-5 mt-10 font-bold cursor-pointer md:mt-2 hover:text-yellow-300'
 							>
-								<a>Porfolio</a>
+								<a href="#about">About</a>
+								
 							</li>
 							<li
-								onClick={() => active(3)}
-								className={
-									(number == 3 ? 'text-blue-300 underline ' : '') +
-									'font-bold pr-5 mt-10 md:mt-2 cursor-pointer hover:text-yellow-300'
-								}
-							>
-								<a>About</a>
-							</li>
-							<li
-								onClick={() => active(4)}
-								className={
-									(number == 4 ? 'text-blue-300 underline ' : '') +
-									'font-bold font-sans pr-5  mt-10 md:mt-2 cursor-pointer hover:text-yellow-300'
-								}
+								onClick={() =>setshow(false)}
+								className='pr-5 mt-10 font-bold cursor-pointer md:mt-2 hover:text-yellow-300'
 							>
 								<a href="#thec">Thecnologies</a>
+							</li>
+							<li
+								onClick={() => setshow(false)}
+								className='pr-5 mt-10 font-sans font-bold cursor-pointer md:mt-2 hover:text-yellow-300'
+							>
+								<a href="#portafolio">Porfolio</a>
 							</li>
 						</ul>
 					</nav>

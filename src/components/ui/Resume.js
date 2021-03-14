@@ -5,7 +5,7 @@ export const Resume = () => {
 
 	
 	return (
-		<>
+		<div id="resume">
 			<div className="flex flex-wrap w-full px-4 py-4 text-white bg-black border-t-8 border-pink-600 border-double auto-rows-3">
 			
 				<div className="relative flex items-start justify-start w-full h-16 md:justify-center ">
@@ -99,6 +99,6 @@ export const Resume = () => {
 
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };

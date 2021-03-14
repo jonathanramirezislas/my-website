@@ -30,7 +30,6 @@ export const Thecnologies = () => {
 			<div ref={ref}></div>
 			{show ? (
 				<div
-					id="thec"
 					className="grid w-full grid-cols-2 grid-rows-6 gap-3 px-4 py-4 bg-black md:grid-cols-3 md:grid-rows-4 md:gap-6"
 				>
 					<>

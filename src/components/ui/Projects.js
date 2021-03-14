@@ -24,7 +24,7 @@ const data = [
 
 export const Projects = () => {
 	return (
-		<div>
+		<div id="portafolio">
 				<div className="relative flex items-start justify-start w-full h-16 bg-black md:justify-center ">
 					<div className="ml-4 md:ml-0">
 						<span className="absolute z-20 mt-2 text-3xl font-bold text-white">PROJECTS</span>

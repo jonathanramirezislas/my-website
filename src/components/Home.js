@@ -52,7 +52,7 @@ export const Home = () => {
 				initial="hidden"
 				animate="visible"
 				exit="exit"
-				className="w-full bg-black v md:h-screen"
+				className="w-full bg-black h-2/4 md:h-screen"
 			>
 				<About/>
 			</motion.div>

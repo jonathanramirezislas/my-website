@@ -25,7 +25,7 @@ export const About = () => {
 	}, [Color]);
 
 	return (
-		<>
+		<div className="h-full" id="about">
 			<Parallax
 				bgImage={image1}
 				className={
@@ -35,7 +35,7 @@ export const About = () => {
 				strength={150}
 			>
 				
-					<div className="h-5/6 lg:h-3/4">
+					<div className="h-5/6 lg:h-3/4" >
 					<motion.div
 					animate={{
 						scale: [1, 2, 2, 1, 1],
@@ -47,7 +47,7 @@ export const About = () => {
 						<div className="w-full h- rounded-t-lg bg-gray-900  flex justify-start items-center space-x-1.5 p-0 md:px-3">
 							<span
 								onClick={() => setColor(1)}
-								className="w-3 h-3 bg-red-400 rounded-full cursor-pointer "
+								className="w-3 h-3 ml-2 bg-red-400 rounded-full cursor-pointer "
 							></span>
 							<span
 								onClick={() => setColor(2)}
@@ -79,6 +79,6 @@ export const About = () => {
 					</div>
 				
 			</Parallax>
-		</>
+		</div>
 	);
 };
