@@ -37,14 +37,14 @@ export const Resume = () => {
 						<span className="font-bold text-pink-600 text-md">2018</span>
 						<h2>Jr Web developer</h2>
 						<span className="position">J Charles & Charles </span>
-						<p className="mt-4">
+						<div className="mt-4">
 							Create and design eCommerce website.
 							<p>Use APIs for purchases working with PayPal REST API.</p>
 							<p>Implement chat for clients and administrator working Mibew Messenger.</p>
 							<p>Develops chart working Canvas JS to visualize and analyze product trends. </p>
 							<p>Write clients and administrator interfaces, design database. </p>
 							<p>Write front-end and back-end code to support web interface</p>
-						</p>
+						</div>
 						<p>
 							<b> HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, PHP and MySQL</b>
 						</p>

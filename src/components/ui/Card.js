@@ -3,6 +3,8 @@ import React, { Suspense, useState } from 'react'
 import { Canvas, useLoader } from 'react-three-fiber'
 import { useAspect, MeshWobbleMaterial, Text } from '@react-three/drei'
 import { a, useSpring } from '@react-spring/three'
+
+
 const AnimatedWobbleMaterial = a(MeshWobbleMaterial)
 
 function useActive(width, height, initial, minFactor, maxFactor) {

@@ -4,12 +4,9 @@ import { Banner } from './ui/Banner';
 import Stack from './ui/Stack';
 import { About } from './ui/About';
 import { Projects } from './ui/Projects';
-import Media from './ui/Media';
 import { motion } from 'framer-motion';
 import { Resume } from './ui/Resume';
-import { Workplace } from './ui/Workplace';
 import { Thecnologies } from './ui/Thecnologies';
-import { TorusGeometry } from 'three';
 
 const containerVariants = {
 	hidden: {

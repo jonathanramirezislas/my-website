@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
 import Card from './Card';
 import { useInView } from 'react-intersection-observer';
 
@@ -30,9 +29,9 @@ export const Thecnologies = () => {
 			<div ref={ref}></div>
 			{show ? (
 				<div
-					className="grid w-full grid-cols-2 grid-rows-6 gap-3 px-4 py-4 bg-black md:grid-cols-3 md:grid-rows-4 md:gap-6"
+					className="grid w-full grid-cols-1 grid-rows-12 gap-3 px-4 py-4 bg-black md:grid-cols-3 md:grid-rows-4 md:gap-6"
 				>
-					<>
+					
 						<div className="flex flex-col ">
 							<Card
 								img={`${thecnologies}` + 'HIBERNATE.png'}
@@ -83,10 +82,7 @@ export const Thecnologies = () => {
 								text={'TAILWIND'}
 							/>
 						</div>
-					</>
-
-					{row2 && (
-						<>
+				
 							<div className="flex flex-col ">
 								<Card
 									img={`${thecnologies}` + 'webpack.png'}
@@ -136,8 +132,7 @@ export const Thecnologies = () => {
 									text={'AWS'}
 								/>
 							</div>
-						</>
-					)}
+					
 				</div>
 			) : (
 				<h1>Loading</h1>
