@@ -13,9 +13,9 @@ export default function Navbar() {
 				<div>
 					<nav className="flex-row w-full h-full p-2 text-indigo-100 color-white md:justify-between">
 						<div className="flex flex-row justify-between">
-							<button onClick={() => setshow(!show)} className=" md:hidden outline-none">
+							<button onClick={() => setshow(!show)} className=" md:hidden  ">
 								<svg
-									className="w-10 h-8 ml-2 mb-2 fill-current"
+									className="w-10 h-8 ml-2 mb-2 fill-current 	"
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
 									viewBox="0 0 24 24"
