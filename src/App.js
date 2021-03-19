@@ -10,9 +10,9 @@ export const App = () => {
 	return (
 		<AnimatePresence exitBeforeEnter>
 			<Switch location={location} key={location.key}>
-				<Route path="/main" component={Main} />
-				<Route path="/home" component={Home} />
-				<Redirect to="/main" />
+				<Route exact path="/" component={Main} />
+				<Route exact path="/home" component={Home} />
+				<Redirect to="/" />
 			</Switch>
 		</AnimatePresence>
 	);

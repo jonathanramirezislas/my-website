@@ -29,17 +29,8 @@ export const Thecnologies = () => {
 			<div ref={ref}></div>
 			{show ? (
 				<div
-					className="grid w-full grid-cols-1 grid-rows-12 gap-3 px-4 py-4 bg-black md:grid-cols-3 md:grid-rows-4 md:gap-6"
+					className="grid w-full grid-cols-1 grid-rows-3 gap-3 px-4 py-4 bg-black md:grid-cols-3 md:grid-rows-1"
 				>
-					
-						<div className="flex flex-col ">
-							<Card
-								img={`${thecnologies}` + 'HIBERNATE.png'}
-								col={'gray'}
-								textcolor={'white'}
-								text={'HIBERNATE'}
-							/>
-						</div>
 						<div className="flex flex-col ">
 							<Card
 								img={`${thecnologies}` + 'spring_boot.png'}
@@ -49,14 +40,6 @@ export const Thecnologies = () => {
 							/>
 						</div>
 
-						<div className="flex flex-col ">
-							<Card
-								img={`${thecnologies}` + 'maven.png'}
-								col={'pink'}
-								textcolor={'black'}
-								text={'MAVEN'}
-							/>
-						</div>
 
 						<div className="flex flex-col ">
 							<Card
@@ -66,64 +49,6 @@ export const Thecnologies = () => {
 								text={'Express'}
 							/>
 						</div>
-
-						<div className="flex flex-col ">
-							<Card
-								img={`${thecnologies}` + 'sass.png'} 
-								col={'pink'} 
-								textcolor={'white'} 
-								text={'SASS'} />
-						</div>
-						<div className="flex flex-col " ref={refrow1}>
-							<Card
-								img={`${thecnologies}` + 'tailwindcss.png'}
-								col={'#C010EC'}
-								textcolor={'black'}
-								text={'TAILWIND'}
-							/>
-						</div>
-				
-							<div className="flex flex-col ">
-								<Card
-									img={`${thecnologies}` + 'webpack.png'}
-									col={'blue'}
-									textcolor={'black'}
-									text={'WEBPACK'}
-								/>
-							</div>
-							<div className="flex flex-col ">
-								<Card
-									img={`${thecnologies}` + 'redux.png'}
-									col={'purple'}
-									textcolor={'white'}
-									text={'REDUX'}
-								/>
-							</div>
-							<div className="flex flex-col ">
-								<Card
-									img={`${thecnologies}` + 'mongo.png'}
-									col={'green'}
-									textcolor={'black'}
-									text={'MONGO'}
-								/>
-							</div>
-
-							<div className="flex flex-col ">
-								<Card
-									img={`${thecnologies}` + 'sqlserver.png'}
-									col={'red'}
-									textcolor={'black'}
-									text={'SQLserver'}
-								/>
-							</div>
-							<div className="flex flex-col ">
-								<Card
-									img={`${thecnologies}` + 'docker.png'}
-									col={'#00FFFD'}
-									textcolor={'black'}
-									text={'DOCKER'}
-								/>
-							</div>
 							<div className="flex flex-col " ref={ref}>
 								<Card
 									img={`${thecnologies}` + 'aws.png'}

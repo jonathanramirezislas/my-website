@@ -28,6 +28,7 @@ export const About = () => {
 		<div className="h-full" id="about">
 			<Parallax
 				bgImage={image1}
+				bgImageSize={'cover'}
 				className={
 					'px-5 py-5 sm:px-16 md:px-48 flex flex-col flex-wrap justify-center content-center items-center h-full ' +
 					ColorBG
@@ -47,31 +48,31 @@ export const About = () => {
 						<div className="w-full h- rounded-t-lg bg-gray-900  flex justify-start items-center space-x-1.5 p-0 md:px-3">
 							<span
 								onClick={() => setColor(1)}
-								className="w-3 h-3 ml-2 bg-red-400 rounded-full cursor-pointer "
+								className="w-3 h-3 md:h-6 lg:h-9 ml-2 bg-red-400 rounded-full cursor-pointer "
 							></span>
 							<span
 								onClick={() => setColor(2)}
-								className="w-3 h-3 bg-yellow-400 rounded-full cursor-pointer "
+								className="w-3 h-3 md:h-6 lg:h-9 bg-yellow-400 rounded-full cursor-pointer "
 							></span>
 							<span
 								onClick={() => setColor(3)}
-								className="w-3 h-3 bg-green-400 rounded-full cursor-pointer "
+								className="w-3 h-3 md:h-6 lg:h-9 bg-green-400 rounded-full cursor-pointer "
 							></span>
 							<h1 className="text-indigo-400"> ABOUT ME</h1>
 						</div>
 						<div className="h-full px-4 py-4 text-justify text-indigo-100 bg-gray-700 border-t-0 md:h-96 lg:h-auto">
-							<p className="p-1 text-sm md:p-2 lg:p-3 md:text-3xl lg:text-4xl">
+							<p className="p-1 text-sm md:p-2 lg:p-8 md:text-3xl lg:text-4xl">
 								👋 Hi! I am engineer of IT. I have experience in the development of mobile application
 								and websites.
 							</p>
-							<p className="p-1 text-sm md:p-2 lg:p-3 md:text-3xl lg:text-4xl">
-								I would like to work in your company to develop my professional skills in wich I could
-								grow professionally.👨‍💻
+							<p className="p-1 text-sm md:p-2 lg:p-8 md:text-3xl lg:text-4xl">
+								👨‍💻I would like to work in your company to develop my professional skills in wich I could
+								grow professionally.
 							</p>
-							<p className="p-1 text-sm md:p-2 lg:p-3 md:text-3xl lg:text-4xl">
-								My favorites tools to develop are ReactJS, React Native and Java.⚛️☕
+							<p className="p-1 text-sm md:p-2 lg:p-8 md:text-3xl lg:text-4xl">
+								My favorites tools to develop are ⚛️ ReactJS, React Native and ☕Java.
 							</p>
-							<p className="p-1 text-sm md:p-2 lg:p-3 md:text-3xl lg:text-4xl">
+							<p className="p-1 text-sm md:p-2 lg:p-8 md:text-3xl lg:text-4xl">
 								My dream is to become a Lead Full-Stack Developer.🚀
 							</p>
 						</div>
