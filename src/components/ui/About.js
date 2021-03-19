@@ -45,18 +45,18 @@ export const About = () => {
 					}}
 					transition={{ duration: 1.5 }}
 				>
-						<div className="w-full h- rounded-t-lg bg-gray-900  flex justify-start items-center space-x-1.5 p-0 md:px-3">
+						<div className="w-full h-9 md:h-16 rounded-t-lg bg-gray-900  flex justify-start items-center space-x-1.5 p-0 md:px-3">
 							<span
 								onClick={() => setColor(1)}
-								className="w-3 h-3 md:h-6 lg:h-9 ml-2 bg-red-400 rounded-full cursor-pointer "
+								className="w-3 h-3 md:h-4 md:w-4 ml-2 bg-red-400 rounded-full cursor-pointer "
 							></span>
 							<span
 								onClick={() => setColor(2)}
-								className="w-3 h-3 md:h-6 lg:h-9 bg-yellow-400 rounded-full cursor-pointer "
+								className="w-3 h-3 md:h-4 md:w-4 bg-yellow-400 rounded-full cursor-pointer "
 							></span>
 							<span
 								onClick={() => setColor(3)}
-								className="w-3 h-3 md:h-6 lg:h-9 bg-green-400 rounded-full cursor-pointer "
+								className="w-3 h-3 md:h-4 md:w-4 bg-green-400 rounded-full cursor-pointer "
 							></span>
 							<h1 className="text-indigo-400"> ABOUT ME</h1>
 						</div>

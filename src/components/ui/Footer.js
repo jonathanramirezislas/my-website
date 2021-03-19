@@ -81,16 +81,16 @@ const Footer = () => {
           <ul className="">
             
             <li className="flex flex-row items-center">
-              <Rightarrow /><a href="#"><span className="ml-1">Linkedln</span></a>
+              <Rightarrow /><a href="https://www.linkedin.com/learning/me" target='_blank'><span className="ml-1">Linkedln</span></a>
             </li>
             <li className="flex flex-row items-center">
-              <Rightarrow /><a href="#"><span className="ml-1">Coursera</span></a>
+              <Rightarrow /><a href="https://es.coursera.org/"  target='_blank'><span className="ml-1">Coursera</span></a>
             </li>
             <li className="flex flex-row items-center">
-              <Rightarrow /><a href="#"><span className="ml-1">Udemy</span></a>
+              <Rightarrow /><a href="https://www.udemy.com/"  target='_blank'><span className="ml-1">Udemy</span></a>
             </li>
             <li className="flex flex-row items-center">
-              <Rightarrow /><a href="#"><span className="ml-1">Books</span></a>
+              <Rightarrow /><a ><span className="ml-1">Books</span></a>
             </li>
           </ul>
         </div>
