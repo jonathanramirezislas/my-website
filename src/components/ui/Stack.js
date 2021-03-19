@@ -24,7 +24,7 @@ export default function Stack({}) {
       className="absolute h-8 w-15 md:w-24 md:h-24 "
         style={{
           borderRadius: '50%',
-          background: `rgba(102, 51, 153, ${precentage * 1})`,
+          background: `rgba(0, 0, 0, ${precentage * 1})`,
           left: '50%',
           top: '50%',
           transform: `translate(-50%, -50%) scale(${precentage * 5})`,
@@ -37,7 +37,7 @@ export default function Stack({}) {
     <div
       className="flex flex-col items-center justify-end md:mt-20 "
     >
-      <h1 className="pt-2 mb-10 text-5xl font-bold text-pink-700 font-dosis">Stack I Use</h1>
+      <h1 className="pt-2 mb-10 text-5xl font-bold text-white font-dosis">Stack I Use</h1>
       <div>
         <div className="flex flex-wrap justify-center ">
           {content.stack.tech.map((tech, index) => (

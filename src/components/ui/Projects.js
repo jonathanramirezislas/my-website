@@ -25,10 +25,10 @@ const data = [
 export const Projects = () => {
 	return (
 		<div id="portafolio">
-				<div className="relative flex items-start justify-start w-full h-16 bg-black md:justify-center ">
+				<div className="relative flex items-start justify-start w-11/12 h-16 bg-black md:justify-center ">
 					<div className="ml-4 md:ml-0">
 						<span className="absolute z-20 mt-2 text-3xl font-bold text-white">PROJECTS</span>
-						<div className="bg-white bg-opacity-50">
+						<div className="bg-black bg-opacity-50">
 							<h2 className="absolute z-10 block -ml-4 text-6xl font-bold tracking-wide bg-opacity-50 bg-no-repeat bg-cover text-align letter-img-bg text-fill-transparent bg-clip-text">
 								PROJECTS
 							</h2>
@@ -41,7 +41,7 @@ export const Projects = () => {
 						<>
 								<Project
 									key={index}
-									class="flex flex-col w-full h-auto bg-white rounded border-4 border-purple-700 "
+									class="flex flex-col w-full h-auto bg-black text-white rounded border-4 border-purple-700 "
 									img={proyect.main_img}
 									info={proyect.info}
 								/>
