@@ -32,11 +32,11 @@ export const Project = (props) => {
 				ref={ref}
 				animate={controls}
 				initial="hidden"
-				className={props.class + ''}
+				className={props.property + ''}
 				variants={BoxVariants}
 			>
 				<img src={props.img} alt="new" />
-				<h4>{props.info}</h4>
+				<h4 className="font-family:Georgia text-3xl	 antialiased font-light	 text-justify	">{props.info}</h4>
 			</motion.div>
 		);
 	} else {

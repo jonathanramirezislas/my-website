@@ -10,7 +10,8 @@ module.exports={
     entry: ['@babel/polyfill','./src/index.js'],
     output:{
         path:path.join(__dirname,'build'),
-        filename:'bundle.js'
+        filename:'bundle.js',
+        publicPath: "/",
     },
     devtool: "cheap-eval-source-map",
     resolve: {

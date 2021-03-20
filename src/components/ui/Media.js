@@ -25,11 +25,13 @@ const pathVariants = {
 };
 
 
+
+
 const Media = () => {
   return (
       <>
         <motion.svg name="github" className="w-8 h-8 ml-2 overflow-visible text-pink-600 cursor-pointer stroke-current md:w-11 md:h-11 md:ml-6 hover:text-yellow-300"   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
-         onClick={()=>console.log('TODO:go to site')}
+         onClick={()=>window.open('https://github.com/jonathanramirezislas', "_blank")}
          variants={svgVariants}
           initial="hidden"
           animate="visible"
@@ -41,7 +43,7 @@ const Media = () => {
           />
         </motion.svg>
         <motion.svg name="facebook" className="w-8 h-8 ml-2 overflow-visible text-pink-600 cursor-pointer stroke-current md:w-11 md:h-11 md:ml-6 hover:text-yellow-300"   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
-         onClick={()=>console.log('TODO:go to site')}
+         onClick={()=>window.open('https://www.facebook.com/elmogwa', "_blank")}
          variants={svgVariants}
           initial="hidden"
           animate="visible"
@@ -53,7 +55,7 @@ const Media = () => {
           />
         </motion.svg>
         <motion.svg className="w-8 h-8 ml-2 overflow-visible text-pink-600 cursor-pointer stroke-current md:w-11 md:h-11 md:ml-6 hover:text-yellow-300"   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
-         onClick={()=>console.log('TODO:go to site')}
+         onClick={()=>window.open('https://www.linkedin.com/in/jonathan-ram%C3%ADrez-b91a381a9/', "_blank")}
          variants={svgVariants}
           initial="hidden"
           animate="visible"
