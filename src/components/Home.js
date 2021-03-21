@@ -23,7 +23,7 @@ const containerVariants = {
 	},
 };
 
-export const Home = () => {
+ const Home = () => {
 
 	return (
 		<div className="w-full h-screen bg-black">
@@ -57,3 +57,4 @@ export const Home = () => {
 		</div>
 	);
 };
+ export default Home;

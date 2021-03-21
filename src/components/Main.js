@@ -33,7 +33,7 @@ const Controls = () => {
   );
 };
 
-export const Main = () => {
+const Main = () => {
   const isBrowser = typeof window !== "undefined";
 
 
@@ -75,3 +75,4 @@ export const Main = () => {
     </section>
   );
 };
+export default Main;
