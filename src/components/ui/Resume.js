@@ -22,7 +22,7 @@ export const Resume = () => {
 				<div className="flex-grow-0 flex-shrink-0 w-full md:w-2/4 ">
 			
 
-					<div className="p-5 mx-4 my-4 bg-gray-900 border-2 border-purple-600 rounded-lg hover:bg-white hover:text-black">
+					<div className="p-5 mx-4 my-4 bg-gray-900 border-2  border-purple-600 rounded-lg hover:bg-white hover:text-black">
 						<span className="font-bold text-pink-600 text-md ">2016-2020</span>
 						<h2>Engineering in Tecnologías de la información y comunicaciones</h2>
 						<span className="position"></span>
