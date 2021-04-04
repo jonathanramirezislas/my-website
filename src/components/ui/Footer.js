@@ -43,10 +43,10 @@ const Footer = () => {
           <ul className="">
             
             <li className="flex flex-row items-center py-2">
-              <Rightarrow /><a class="mail" href="mailto:jonathanalejandro.ramirezislas@gmail.com" target='_blank'><span className="ml-1">e-mail</span></a>
+              <Rightarrow /><a class="mail" href="mailto:jonathanalejandro.ramirezislas@gmail.com" target='_blank'><span className="ml-1 hover:text-yellow-400">e-mail</span></a>
             </li>
             <li className="flex flex-row items-center py-2">
-              <Rightarrow /><a href="https://www.linkedin.com/in/jonathan-ram%C3%ADrez-b91a381a9/" target='_blank'><span className="ml-1">Linkedln profile</span></a>
+              <Rightarrow /><a href="https://www.linkedin.com/in/jonathan-ram%C3%ADrez-b91a381a9/" target='_blank'><span className="ml-1 hover:text-yellow-400">Linkedln profile</span></a>
             </li>
             <li className="flex flex-row items-center py-2">
               <Rightarrow /><a ><span className="ml-1">Aguascalientes, México</span></a>
@@ -60,16 +60,16 @@ const Footer = () => {
           <ul className="">
             
             <li className="flex flex-row items-center py-2">
-              <Rightarrow /><a href="#"><span className="ml-1">Soccer</span></a>
+              <Rightarrow /><a ><span className="ml-1 ">Soccer</span></a>
             </li>
             <li className="flex flex-row items-center py-2">
-              <Rightarrow /><a href="#"><span className="ml-1">Swimming</span></a>
+              <Rightarrow /><a ><span className="ml-1">Swimming</span></a>
             </li>
             <li className="flex flex-row items-center py-2">
-              <Rightarrow /><a href="#"><span className="ml-1">Gym</span></a>
+              <Rightarrow /><a ><span className="ml-1">Gym</span></a>
             </li>
             <li className="flex flex-row items-center py-2">
-              <Rightarrow /><a href="#"><span className="ml-1">Movies</span></a>
+              <Rightarrow /><a><span className="ml-1">Movies</span></a>
             </li>
           </ul>
         </div>
@@ -79,13 +79,13 @@ const Footer = () => {
           <ul className="">
             
             <li className="flex flex-row items-center py-2">
-              <Rightarrow /><a href="https://www.linkedin.com/learning/me" target='_blank'><span className="ml-1">Linkedln</span></a>
+              <Rightarrow /><a href="https://www.linkedin.com/learning/me" target='_blank'><span className="ml-1 hover:text-yellow-400">Linkedln</span></a>
             </li>
             <li className="flex flex-row items-center py-2">
-              <Rightarrow /><a href="https://es.coursera.org/"  target='_blank'><span className="ml-1">Coursera</span></a>
+              <Rightarrow /><a href="https://es.coursera.org/"  target='_blank'><span className="ml-1 hover:text-yellow-400">Coursera</span></a>
             </li>
             <li className="flex flex-row items-center py-2 ">
-              <Rightarrow /><a href="https://www.udemy.com/"  target='_blank'><span className="ml-1">Udemy</span></a>
+              <Rightarrow /><a href="https://www.udemy.com/"  target='_blank'><span className="ml-1 hover:text-yellow-400">Udemy</span></a>
             </li>
             <li className="flex flex-row items-center py-2">
               <Rightarrow /><a ><span className="ml-1">Books</span></a>
