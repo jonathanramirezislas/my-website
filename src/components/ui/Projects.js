@@ -6,7 +6,7 @@ const data = [
 	{
 		info: 'Through this project it allowed me to know the importance of databases learning store procedures, indixing, trigers, JOINS, the project was developed with Tableau.',
 		main_img:
-			'http://jonathanramirezislas.com.mx/shared/dash.gif',
+			'http://jonathanramirezislas.com.mx/shared/dash.PNG',
 		tags:[
 			'SQL',
 			'MySQL',			
@@ -31,6 +31,17 @@ const data = [
 			'ERP',			
 		]
 	},
+	{
+		info: 'This project is for pets such as cats and dogs,petfeed allows you set amount of croquettes per day ',
+		main_img: 'http://jonathanramirezislas.com.mx/shared/feedpets.png',
+		tags:[
+			'REACT NATIVE',
+			'REACTJS',
+			'NodeMCU',
+			
+		]
+	},
+	,
 	{
 		info: 'This project is to monitor the meals inside a restaurant in real time, the project was built with ReactJS React Native and firebase.',
 		main_img: 'http://jonathanramirezislas.com.mx/shared/sagradocorazon_tacos.gif',
